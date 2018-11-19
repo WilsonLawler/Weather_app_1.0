@@ -20,7 +20,7 @@ function searchWeather() {
     
     var ajax = new XMLHttpRequest();
     var apiKey = "&APPID=c70b4229442aa59935041d5e2daf5e3e";
-    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric${apiKey}`;
+    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric${apiKey}`;
     
     ajax.open("GET", url, true);
     ajax.send();
